@@ -116,6 +116,14 @@
         left: 0;
         width: 100%;
         z-index: 2;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 50px;
+        height: 100%;
+        text-align: center;
       }
 
       .container.right-panel-active .sign-in-container {
@@ -197,14 +205,14 @@
 </nav>
   <div class="container" id="container">
     <div class="form-container sign-in-container">
-        <form action="#">
+        <!-- <form action="#"> -->
             <h1>Donor Login </h1>
             <br>
             <input type="email" placeholder="Username" />
             <input type="password" placeholder="Password" />
             <a href="#">Forgot your password?</a>
-            <button>Log in </button>
-        </form>
+            <a href="donate_medicine.html"><button  id="donatemed">Log in </button></a>
+        <!-- </form> -->
     </div>
   </div>
 </html>
