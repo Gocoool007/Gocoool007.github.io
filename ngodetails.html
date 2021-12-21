@@ -1,4 +1,4 @@
-<html>
+
   <head>
     <link rel="stylesheet" href="admin.css" />
     <script src="admin.js"></script>
@@ -75,7 +75,14 @@
         border-color: #ffffff;
       }
       form {
-       
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 50px;
+        height: 100%;
+        text-align: center;
       }
 
       input {
@@ -106,9 +113,6 @@
       }
 
       .sign-in-container {
-        left: 0;
-        width: 100%;
-        z-index: 2;
         background-color: #ffffff;
         display: flex;
         align-items: center;
@@ -117,6 +121,10 @@
         padding: 0 50px;
         height: 100%;
         text-align: center;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        margin-left: -25%;
       }
 
       .container.right-panel-active .sign-in-container {
@@ -177,35 +185,40 @@
       }
     </style>
   </head>
+  <body>
   <nav class="navbar" style="top: 1;" >
-    <div class="inner-width">
-        <img src="logo1.jpg" class="logo"></img>
-        <button class="menu-toggler">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <div class="navbar-menu">
-        <a href="index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Service</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-        <a href="admin.html">Login</a>
-        
-    </div>
-</div>
+		<div class="inner-width">
+			<img src="logo1.jpg" class="logo"></img>
+			<button class="menu-toggler">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<div class="navbar-menu">
+			<a href="index.html">Home</a>
+			<a href="#about">About</a>
+			<a href="#services">Service</a>
+			<a href="#education">Education</a>
+			<a href="#contact">Contact</a>
+			<a href="admin.html">Login</a>
+			
+		</div>
+	</div>
 </nav>
   <div class="container" id="container">
     <div class="form-container sign-in-container">
-        <!-- <form action="#"> -->
-            <h1>NGO Login </h1>
-            <br>
-            <input type="email" placeholder="Username" />
-            <input type="password" placeholder="Password" />
-            <a href="#">Forgot your password?</a>
-            <a href="ngodetails.html"><button  id="ngodetails">Log in </button></a>
-        <!-- </form> -->
+    <!-- <form action="#" style="margin-right: 50%;"> -->
+        <a href="request_medicine.html"><button id="requestor">Request Medicine</button></a><br>   
+    <!-- </form> -->
+      
     </div>
+    <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-right">
+                    <a href="donate_medicine.html"><button class="ghost" id="signUp">Donate Medicine </button></a>
+                </div>
+            </div>
+        </div>
   </div>
+</body>
 </html>
